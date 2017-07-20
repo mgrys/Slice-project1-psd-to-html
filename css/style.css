@@ -1,51 +1,59 @@
-body{
+body {
     max-width: 1900px;
     margin: 0 auto;
 }
+
 .container {
     max-width: 1170px;
     padding-right: 0;
     padding-left: 0;
 }
-.hero{
+
+.hero {
     position: relative;
     height: 100vh;
     width: 100%;
     background-image: url(../images/header_background.jpg);
-    background-size: cover;  
+    background-size: cover;
 }
+
 .navbar-brand {
-  padding: 0px;
+    padding: 0px;
 }
+
 .navbar-brand>img {
-  height: 100%;
-  padding: 15px;
-  width: auto;
+    height: 100%;
+    padding: 15px;
+    width: auto;
 }
+
 .navbar {
     margin-top: 20px;
-   background-color: transparent;
-   background: transparent;
-   border-color: transparent;
+    background-color: transparent;
+    background: transparent;
+    border-color: transparent;
 }
 
 .navbar-default .navbar-nav>li>a {
-opacity: 0.75;
-color: #ffffff;
-font-family: Raleway;
-font-size: 13px;
-font-weight: 700;
-text-transform: uppercase;
- }
+    opacity: 0.75;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 .navbar-default .navbar-nav>li>a:hover {
     color: red;
 }
-.inside{
+
+.inside {
     margin-top: 200px;
     margin: 0 auto;
     max-width: 920px;
 }
-.slogan{
+
+.slogan {
     margin: 0 auto;
     text-align: center;
     padding: 0 25px 40px 25px;
@@ -57,7 +65,8 @@ text-transform: uppercase;
     line-height: 71px;
     text-transform: uppercase;
 }
-.slogan_text{
+
+.slogan_text {
     margin: 0 auto;
     margin-top: 20px;
     text-align: center;
@@ -67,6 +76,7 @@ text-transform: uppercase;
     font-weight: 400;
     line-height: 33px;
 }
+
 .button {
     display: block;
     width: 200px;
@@ -83,4 +93,23 @@ text-transform: uppercase;
     font-weight: 600;
     line-height: 21px;
     text-transform: uppercase;
+}
+.features{
+    padding: 40px;
+    text-align: center;
+}
+.feature-header{
+    padding: 20px 0;
+    color: #2d3033;
+font-family: Raleway;
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+}
+.feature-text{
+    color: #6c7279;
+font-family: Raleway;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
 }
