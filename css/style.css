@@ -1,0 +1,86 @@
+body{
+    max-width: 1900px;
+    margin: 0 auto;
+}
+.container {
+    max-width: 1170px;
+    padding-right: 0;
+    padding-left: 0;
+}
+.hero{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/header_background.jpg);
+    background-size: cover;  
+}
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+.navbar {
+    margin-top: 20px;
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+opacity: 0.75;
+color: #ffffff;
+font-family: Raleway;
+font-size: 13px;
+font-weight: 700;
+text-transform: uppercase;
+ }
+.navbar-default .navbar-nav>li>a:hover {
+    color: red;
+}
+.inside{
+    margin-top: 200px;
+    margin: 0 auto;
+    max-width: 920px;
+}
+.slogan{
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 25px 40px 25px;
+    margin-top: 26vh;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 71px;
+    text-transform: uppercase;
+}
+.slogan_text{
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+}
+.button {
+    display: block;
+    width: 200px;
+    height: 46px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 77px;
+    border-radius: 2px;
+    background-color: #e84545;
+    border: none;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 21px;
+    text-transform: uppercase;
+}
