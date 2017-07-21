@@ -1,4 +1,4 @@
-body {
+    body {
     max-width: 1900px;
     margin: 0 auto;
 }
@@ -15,6 +15,19 @@ body {
     width: 100%;
     background-image: url(../images/header_background.jpg);
     background-size: cover;
+    z-index: 1;
+}
+
+.hero div::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: rgba(43, 46, 74, 0.95);
+    z-index: -1;
 }
 
 .navbar-brand {
@@ -48,7 +61,6 @@ body {
 }
 
 .inside {
-    margin-top: 200px;
     margin: 0 auto;
     max-width: 920px;
 }
@@ -64,6 +76,7 @@ body {
     font-weight: 700;
     line-height: 71px;
     text-transform: uppercase;
+    
 }
 
 .slogan_text {
@@ -94,22 +107,48 @@ body {
     line-height: 21px;
     text-transform: uppercase;
 }
-.features{
+
+.features {
     padding: 40px;
     text-align: center;
 }
-.feature-header{
+
+.feature-header {
     padding: 20px 0;
     color: #2d3033;
-font-family: Raleway;
-font-size: 14px;
-font-weight: 700;
-text-transform: uppercase;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
-.feature-text{
+
+.feature-text {
     color: #6c7279;
-font-family: Raleway;
-font-size: 14px;
-font-weight: 400;
-line-height: 21px;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.gallery {
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    -ms-flex-direction: column;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: flex;
+}
+
+.picture {
+    -webkit-box-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    width: 350px; 
+    margin: .1vw;
+}
+
+.picture img {
+    width: 100%;
+    height: auto;
 }
