@@ -1,0 +1,27 @@
+{
+  "name": "projekt_slice_pdf",
+  "version": "1.0.0",
+  "description": "Ciecie pliku psd do html z uzyciem bootstrapowych komponentów",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgrys/Slice-project1-psd-to-html.git"
+  },
+  "author": "Mare Grys",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mgrys/Slice-project1-psd-to-html/issues"
+  },
+  "homepage": "https://github.com/mgrys/Slice-project1-psd-to-html#readme",
+  "keywords": [],
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  }
+}
