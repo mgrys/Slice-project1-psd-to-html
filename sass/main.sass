@@ -1,3 +1,13 @@
+/*variable*/
+
+$primary_font: "Raleway"
+$phone: "all and (max-width: 767px)"
+$tablet-width: 768px
+
+@mixin tablet
+    @media (max-width: #{$tablet-width - 1px})
+        @content
+
 body
     max-width: 1900px
     margin: 0 auto
@@ -36,7 +46,7 @@ body
 .navbar-default .navbar-nav>li>a
     opacity: 0.75
     color: #ffffff
-    font-family: Raleway
+    font-family: $primary_font
     font-size: 13px
     font-weight: 700
     text-transform: uppercase
@@ -45,6 +55,7 @@ body
 .inside
     margin: 0 auto
     max-width: 920px
+    height: auto;
 .slogan
     margin: 0 auto
     text-align: center
@@ -61,7 +72,7 @@ body
     margin-top: 20px
     text-align: center
     color: #ffffff
-    font-family: Raleway
+    font-family: $primary_font
     font-size: 22px
     font-weight: 400
     line-height: 33px
@@ -76,7 +87,7 @@ body
     background-color: #e84545
     border: none
     color: #ffffff
-    font-family: Raleway
+    font-family: $primary_font
     font-size: 13px
     font-weight: 600
     line-height: 21px
@@ -87,13 +98,13 @@ body
 .feature-header
     padding: 20px 0
     color: #2d3033
-    font-family: Raleway
+    font-family: $primary_font
     font-size: 14px
     font-weight: 700
     text-transform: uppercase
 .feature-text
     color: #6c7279
-    font-family: Raleway
+    font-family: $primary_font
     font-size: 14px
     font-weight: 400
     line-height: 21px
@@ -174,7 +185,7 @@ body
     h3
         display: block
         text-align: center
-        font-family: Raleway
+        font-family: $primary_font
         font-size: 14px
         font-weight: 700
         text-transform: uppercase
@@ -182,7 +193,7 @@ body
         display: block
         margin: 0 auto
         width: 200px
-        font-family: Raleway
+        font-family: $primary_font
         font-size: 14px
         font-weight: 400
 .benefits
@@ -195,18 +206,18 @@ body
 .benefits_name
     text-align: left
     color: #2d3033
-    font-family: Raleway
+    font-family: $primary_font
     font-size: 22px
     font-weight: 400
 .benefits_st
     color: #e84545
-    font-family: Raleway
+    font-family: $primary_font
     font-size: 13px
     font-weight: 400
     text-transform: uppercase
 .benefits_desc
     color: #6c7279
-    font-family: Raleway
+    font-family: $primary_font
     font-size: 14px
     font-weight: 400
     line-height: 21px
@@ -232,7 +243,7 @@ body
     margin-top: 100px
 .img_carusel
     width: 100%
-    height: 500px
+    height: auto
     flex: auto
 .description_carusel
     background-color: #53354a
@@ -244,62 +255,140 @@ body
     display: flex
     display: -webkit-flex
     flex-direction: row
-    flex-wrap: nowrap
     height: auto
 
 .img_flex
     flex: 1
-    height: 500px
+    height: auto
     width: 950px
 
 p.sentence
     max-width: 52%
-    margin-top: 114px
-    margin-left: 85px
-    margin-bottom: 30px
+    margin-top: 6vh
+    margin-left: 4vw
     color: #ffffff
     font-family: Cardo
     font-size: 1.9vw
     font-style: italic
     line-height: 2.2vw
 p.small_sign
-    margin-left: 85px
+    margin-left: 4vw
     color: #ffffff
-    font-family: Raleway
-    font-size: 13px
+    font-family: $primary_font
+    font-size: 1.2vw
     font-weight: 700
-    line-height: 21px
+    line-height: 2.4vw
     text-transform: uppercase
 .carousel-indicators
     left: 70%
-    bottom: 25%
+    bottom: 1vh
 .jumbotron
     background-color: #FFFFFF
-.jumbotron h3
-    margin-top: 100px
-    color: #2d3033
-    font-family: Raleway
-    font-size: 28px
-    font-weight: 300
-    line-height: 21px
-.jumbotron p
-    margin-bottom: 40px
-    padding-top: 16px
-    text-align: center
-    color: #2d3033
-    font-family: Raleway
-    font-size: 13px
-    font-weight: 700
-    line-height: 21px
-    text-transform: uppercase
-.jumbotron a
+    h3
+        margin-top: 10vh
+        color: #2d3033
+        font-family: $primary_font
+        font-size: 28px
+        font-weight: 300
+        line-height: 40px
+.jumbotron 
+    p
+        margin-bottom: 40px
+        padding-top: 16px
+        text-align: center
+        color: #2d3033
+        font-family: $primary_font
+        font-size: 13px
+        font-weight: 700
+        line-height: 21px
+        text-transform: uppercase
+.jumbotron 
+    a
+        color: #ffffff
+        font-family: $primary_font
+        font-size: 13px
+        font-weight: 600
+        line-height: 21px
+        text-transform: uppercase
+        border-radius: 2px
+        background-color: #e84545
+        margin-bottom: 10vh
+.contact
+    height: auto
+    padding-top: 7vh
+    background-color: #3a3e64
+    padding-bottom: 7vh
+.location, .about
+    h3
+        color: #ffffff
+        font-family: $primary_font
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+    p
+        opacity: 0.5
+        color: #ffffff
+        font-family: $primary_font
+        font-size: 14px
+        font-weight: 400
+        line-height: 23px
+.share
+    h3
+        color: #ffffff
+        font-family: $primary_font
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+.footer-icons
+    padding-top: 10px
+    i
+        width: 40px
+        height: 40px
+        margin: 3px
+        font-size: 20px
+        color: #c6cacc
+        cursor: pointer
+        border: 2px solid #ffffff
+        background-color: rgba(255, 255, 255, 0)
+        line-height: 40px
+        text-align: center
+.autor
+    height: 94px
+    position: relative
+    background-color: #313454
+.copyright
+    position: absolute
+    width: 312px
+    height: 36px
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    margin: auto
+    font-size: 14px
+    font-weight: 400
+    line-height: 23px
+    color: #808080
+    font-family: $primary_font
+.made_with
+    font-size: 14px
+    font-weight: 400
+    line-height: 23px
+    color: #808080
+    font-family: $primary_font
+.heart
+    color: #e84545
+.forename
     color: #ffffff
-    font-family: Raleway
-    font-size: 13px
-    font-weight: 600
-    line-height: 21px
-    text-transform: uppercase
-    border-radius: 2px
-    background-color: #e84545
-    margin-bottom: 100px
-
+    font-family: $primary_font
+@include tablet
+    .slogan
+        margin-top: 10vh
+        color: #ffffff
+        font-family: "Open Sans"
+        font-size: 6.34vw
+        line-height: 6.37vw
+    .slogan_text
+        font-size: 14px
+        line-height: 24px
+ 
